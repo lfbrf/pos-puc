@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="/static/main.css" media="screen">
+        <link href="grid/simple-grid.min.css" rel="stylesheet">
+        <title>PyAgenda</title>
+    </head>
+    <body>
+        <div class="welcome">
+            <h1 align="center" class="h1">Seja bem vindo(a) a sua agenda de 2023</h1>
+             <div align="right" >Deseja sair? <a href="/logout_page"> Desconectar </a></div>
+        </div>
+        <div class="container">
+            <div class="tasks-show">
+                <h4 align="center">{{nome}}</h4>
+                <div>
+                    <br><br>
+                    <label class="item"> Data:{{dia}} as {{hora}}</label><br><br><br>
+                    <label class="item"> Descrição: {{descricao}}</label><br><br><br>
+                    <label class="item"> Endereço: {{endereco}}</label><br><br><br>
+                </div>
+            </div>
+            <hr>
+            <div align="center"> <a href="/main_page"> Voltar </a></div>
+
+        </div>
+    </body>
+</html>

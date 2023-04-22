@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="/static/login.css" media="screen">
+        <title>Login</title>
+    </head>
+    <body>
+        <div class="container">
+            <h1 align="center" class="icon-tasker">PyAgenda</h1>
+            <p>Faça login para continuar</p>
+            <form action="/login_page" method="post">
+                <div><input type="text" name="userid" placeholder="Login"></div>
+                <div><input type="password" name="password" placeholder="Password"></div>
+                <div align="center"><input name="submit" type="submit" value="Login" class="icon-login"></div>
+                <div><hr></div>
+                <div align="center" class="small">Não possui conta?<a href="/registro_page"> Registre-se!</a></div>
+            </form>
+
+        </div>
+
+    </body>
+</html>

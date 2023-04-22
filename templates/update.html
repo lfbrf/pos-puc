@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="/static/main.css" media="screen">
+        <link href="grid/simple-grid.min.css" rel="stylesheet">
+        <title>PyAgenda</title>
+    </head>
+    <body>
+        <div class="welcome">
+            <h1 align="center" class="h1">Seja bem vindo(a) a sua agenda de 2023</h1>
+             <div align="right" >Deseja sair? <a href="/logout_page"> Desconectar </a></div>
+        </div>
+        <div class="container">
+            <div class="tasks-show">
+                <h4 align="center">Atualizar</h4>
+                <hr>
+                <p align="center">Mantenha vazio para manter os dados atuais</p>
+                <div>
+                    <br>
+                    <form action="/main_page_atualizar_dados" method="post">
+                        <input id='newname' name="newname" class="item" type="text" placeholder="Novo nome">Nome atual: {{nome}}<br>
+                        <input id='newdia' name="newdia" class="item" type="date" min="2023-01-01">Data atual: {{dia}}<br>
+                        <input id='newhora' name="newhora" class="item" type="time" placeholder="Novo horario">Horario atual: {{hora}}<br>
+                        <input id='newdescricao' name="newdescricao" class="item" type="text" placeholder="Nova descrição">Descrição atual: {{descricao}}<br>
+                        <input id='newendereco' name="newendereco" class="item" type="text" placeholder="Novo endereço">Endereço atual: {{endereco}}<br>
+                        <button type="submit" onclick="main_page_update_dados()">Salvar evento</button>
+                    </form>
+                    <br>
+                    <hr>
+                </div>
+            </div>
+            <div align="center"> <a href="/main_page"> Voltar </a></div>
+
+        </div>
+    </body>
+</html>

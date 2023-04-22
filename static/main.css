@@ -1,0 +1,174 @@
+body,html{
+    margin: 0;
+    padding:0;
+    height: 100%;
+    font-family: Helvetica, sans-serif;
+    display: grid;
+    background-color:#004857;
+}
+
+.container{
+    margin: auto;
+    padding: 20px;
+    border:1px solid #ccc;
+    border-radius:10px;
+    background-color:#ffffff;
+    color: #004857;
+ }
+
+ .container_show{
+    padding: 20px;
+    border:1px solid #ccc;
+    border-radius:10px;
+    background-color:#ffffff;
+    color: #004857;
+ }
+
+
+input{
+    padding: 5px 0 5px 10px;
+    margin:5px 0 5px 0;
+    font-size: 1em;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+input[type="submit"]{
+    background-color: #004857;
+    color: white;
+    padding: 5px 10px 5px 35px;
+    margin: 5px 0 5px 0;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    width: 1fr;
+    display: inline-block;
+    height: 2em;
+}
+
+button[type="submit"]{
+    background-color: #004857;
+    color: white;
+    padding: 5px 10px 25px 35px;
+    margin: 5px 0 5px 0;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    width: 1fr;
+    display: inline-block;
+    height: 2em;
+}
+
+input[type="submit"]: hover {
+    background-color: #004857;
+}
+
+.small{
+    font-size: x-small;
+}
+
+.icon-tasker{
+    background:url("/static/icons/log-in-outline.svg") no-repeat left center;
+    padding-left:40px;
+}
+
+.icon-login{
+    background:url("/static/icons/log-in-outline.svg") no-repeat left center;
+    padding-left:40px;
+}
+
+.icon-error{
+    background:url("/static/icons/close-circle-outline.svg") no-repeat left center;
+    padding-left:40px;
+}
+
+.large{
+    font-size: 2em;
+}
+
+.welcome{
+    margin: 10;
+    padding: 10px;
+    border:1px solid #ccc;
+    border-radius:5px;
+    background-color:#ffffff;
+    color: #004857;
+ }
+
+ input{
+    padding: 5px 0 5px 10px;
+    margin:5px 0 5px 0;
+    font-size: 1em;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    color: #004857;
+}
+
+.item{
+    padding:15px;
+    margin:10px
+    font-size: 1em;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    color: #004857;
+}
+
+h4{
+    padding: 5px 0 5px 10px;
+    margin:5px 0 5px 0;
+    font-size: 2em;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    color: #004857;
+}
+
+input[type="submit"]: hover {
+    background-color: #004857;
+}
+
+.small{
+    font-size: small;
+}
+
+.small_error{
+    font-size: small;
+    color: #cc3300;
+}
+
+.large{
+    font-size: 3em;
+}
+
+.icon-tasker{
+    background:url("/static/icons/log-in-outline.svg") no-repeat left center;
+    padding-left:40px;
+}
+
+.icon-add{
+    background:url("/static/icons/add-circle-outline.svg") no-repeat left center;
+    padding-left:5px;
+}
+
+.icon-remove{
+    background:url("/static/icons/close-circle-outline.svg") no-repeat left center;
+    padding-left:5px;
+}
+
+.icon-save{
+    background:url("/static/icons/save-outline.svg") no-repeat left center;
+    padding-left:5px;
+}
+
+.icon-refresh{
+    background:url("/static/icons/refresh-circle-outline.svg") no-repeat left center;
+    padding-left:5px;
+}
+
+.icon-see{
+    background:url("/static/icons/eye-outline.svg") no-repeat left center;
+    background-color: #fff388;
+    padding-left:5px;
+}
+
+.icon-see{
+    background:url("/static/icons/log-out-outline.svg") no-repeat left center;
+    padding-left:5px;
+}

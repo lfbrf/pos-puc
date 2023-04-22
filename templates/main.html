@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="/static/main.css" media="screen">
+        <link href="grid/simple-grid.min.css" rel="stylesheet">
+        <title>PyAgenda</title>
+    </head>
+    <body>
+        <div class="welcome">
+            <h1 align="center" class="h1">Seja bem vindo(a) a sua agenda de 2023 {{nome}}</h1>
+             <div align="right" >Deseja sair? <a href="/logout_page"> Sair </a></div>
+        </div>
+        <div class="container">
+            <p></p>
+            <div class="tasks-create">
+                <h4 align="center">Adicionar um evento?</h4>
+                <hr>
+                <p align="center">Campos vazios são permitidos</p>
+                <form action="/main_page_novo_evento" method="post">
+                    <div><input type="text" id="taskname" name="taskname" placeholder="Nome do evento"> </div>
+                    <div><input type="text" id="taskdescription" name="taskdescription" placeholder="Descrição">  </div>
+                    <div><input type="date" min="2023-01-01" id="taskdate" name="taskdate" placeholder="Data (DD/MM/AAAA)"> </div>
+                    <div><input type="time" id="taskhour"  name="taskhour" placeholder="Horário (HH:MM)"></div>
+                    <div><input type="text" id="tasklocal" name="tasklocal" placeholder="Local"> </div>
+                    <div align="left"><input name="submit" type="submit" value="Criar" class="icon-add" onclick="main_page_create()"></div>
+                </form>
+            </div>
+        </div>
+        <div class="container_show">
+            <div class="tasks-show">
+                <h4 align="center">Seus Eventos</h4>
+                <div>
+                    <br>
+                    {% for item in itens%}
+                        <label class="item" href="?itemid={{item.id}}"><b> Nome:{{item.nome}} </b>| Data:{{item.dia}} as {{item.hora}}</label>
+                        <form action="/main_page_consultar" method="post">
+                            <button id="?itemid={{item.id}}" name="see" type="submit" value={{item.eventoId}} class="icon-see" onclick="main_page_read()">Consultar</button>
+                        </form>
+                        <form action="/main_page_atualizar" method="post">
+                            <button id="?eventoid={{item.id}}" name="refresh" type="submit" value={{item.eventoId}} class="icon-refresh" onclick="main_page_update()">Atualizar</button>
+                        </form>
+                        <form action="/main_page_deletar" method="post">
+                            <button id="?removerid={{item.id}}" name="remove" type="submit" value={{item.eventoId}} class="icon-remove" onclick="main_page_deletar()">Deletar</button>
+                        </form>
+                        <hr>
+                    {%endfor%}
+                </div>
+                <hr>
+            </div>
+            <div align="center"> <a href="/main_page_deletar_eventos"> Excluir todos os eventos </a></div>
+            <hr>
+            <div align="right">Deseja excluir sua conta? <a href="/main_page_deletar_user"> Apagar conta </a></div>
+        </div>
+
+
+
+    </body>
+</html>
