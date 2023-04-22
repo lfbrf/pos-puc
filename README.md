@@ -4,7 +4,7 @@ Foi desenvolvido como propósito principal de trabalho final da pós graduação
 
 # Links úteis
 #### Apresentação do trabalho: TODO
-#### Relatório final: TODO
+#### Relatório final: Disponível em [pdf](relatorio-luiz-felipe-basile-ribeiro-filho.pdf) ou [odt](relatorio-luiz-felipe.odt)
 
 # Tecnologias
 - Python
