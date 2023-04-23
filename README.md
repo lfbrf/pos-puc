@@ -3,8 +3,9 @@ Sistema web para gerenciamento de tarefas e eventos que possibilita a organizaç
 Foi desenvolvido como propósito principal de trabalho final da pós graduação em Arquitetura de Software da puc minas.
 
 # Links úteis
-#### Apresentação do trabalho: TODO
+#### Apresentação do trabalho: https://youtu.be/IUuV11Cojbs
 #### Relatório final: Disponível em [pdf](relatorio-luiz-felipe-basile-ribeiro-filho.pdf) ou [odt](relatorio-luiz-felipe.odt)
+#### Url produção: https://alunoproject.pythonanywhere.com
 
 # Tecnologias
 - Python
